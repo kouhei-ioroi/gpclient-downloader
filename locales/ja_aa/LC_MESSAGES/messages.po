@@ -1,0 +1,26 @@
+msgid "title"
+msgstr "AAモードがｷﾀ━━━━━━(ﾟ∀ﾟ)━━━━━━ !!!!!"
+
+msgid "listnotfound"
+msgstr "リスト参照できなかったよ(´;ω;`)ﾌﾞﾜｯ"
+
+msgid "fileselect"
+msgstr "ファイルを選択汁！"
+
+msgid "size"
+msgstr "デカさ"
+
+msgid "download"
+msgstr "落とす"
+
+msgid "filenotselect"
+msgstr "ファイルが選択されてないよ(´；ω；`)ｳｩｩ"
+
+msgid "filenotfound"
+msgstr "S3にファイルが存在しないかアクセスできないよ(´；ω；`)ｳｯ…"
+
+msgid "downloadfinish"
+msgstr "ダウンロード完了ｷﾀ━━━━━━(ﾟ∀ﾟ)━━━━━━ !!!!!"
+
+msgid "downloadfailed"
+msgstr "ダウンロードに失敗しました( ﾉД`)ｼｸｼｸ…"

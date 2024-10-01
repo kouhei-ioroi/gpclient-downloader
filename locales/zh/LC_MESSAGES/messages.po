@@ -1,0 +1,26 @@
+msgid "title"
+msgstr "GlobalProtect 客户端下载器"
+
+msgid "listnotfound"
+msgstr "无法引用列表"
+
+msgid "fileselect"
+msgstr "文件选择"
+
+msgid "size"
+msgstr "大小"
+
+msgid "download"
+msgstr "下载"
+
+msgid "filenotselect"
+msgstr "未选择文件"
+
+msgid "filenotfound"
+msgstr "文件在S3上不存在或无法访问"
+
+msgid "downloadfinish"
+msgstr "下载完成"
+
+msgid "downloadfailed"
+msgstr "下载失败"

@@ -1,0 +1,26 @@
+msgid "title"
+msgstr "GlobalProtect ClientDownloader"
+
+msgid "listnotfound"
+msgstr "Could not access the list"
+
+msgid "fileselect"
+msgstr "File Selection"
+
+msgid "size"
+msgstr "Size"
+
+msgid "download"
+msgstr "Download"
+
+msgid "filenotselect"
+msgstr "No file selected"
+
+msgid "filenotfound"
+msgstr "The file does not exist on S3 or cannot be accessed"
+
+msgid "downloadfinish"
+msgstr "Download complete"
+
+msgid "downloadfailed"
+msgstr "Download failed"

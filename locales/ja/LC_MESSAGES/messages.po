@@ -1,0 +1,26 @@
+msgid "title"
+msgstr "GlobalProtect ClientDownloader"
+
+msgid "listnotfound"
+msgstr "リストが参照できませんでした"
+
+msgid "fileselect"
+msgstr "ファイル選択"
+
+msgid "size"
+msgstr "サイズ"
+
+msgid "download"
+msgstr "ダウンロード"
+
+msgid "filenotselect"
+msgstr "ファイルが選択されていません"
+
+msgid "filenotfound"
+msgstr "S3上にファイルが存在しないかアクセスできません"
+
+msgid "downloadfinish"
+msgstr "ダウンロードが完了しました"
+
+msgid "downloadfailed"
+msgstr "ダウンロードに失敗しました"
