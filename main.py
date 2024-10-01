@@ -4,14 +4,14 @@ import requests
 import xml.etree.ElementTree as ET
 import os
 import gettext
+import locale
+
 
 BASE_URL = "https://pan-gp-client.s3.amazonaws.com/"
 
-def get_user_language_from_env():
-    lang = os.environ.get('LANG', None)
-    if lang:
-        return lang.split('.')[0]
-    return None
+def get_user_language():
+    language_code, encoding = locale.getdefaultlocale()
+    return language_code.split("_")[0]
 
 def set_language(lang):
     locales_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locales')
@@ -69,13 +69,13 @@ class App(tk.Tk):
         self.file_combo.bind("<<ComboboxSelected>>", self.update_size_label)
 
         self.size_label = ttk.Label(self, text=f"{_("size")}: N/A")
-        self.size_label.grid(row=0, column=2, padx=5, pady=5)
+        self.size_label.grid(row=1, column=1, padx=5, pady=5, sticky="w")
         
         self.download_button = ttk.Button(self, text=_("download"), command=self.on_download_button)
-        self.download_button.grid(row=1, column=2, padx=5, pady=5, sticky="e")
+        self.download_button.grid(row=1, column=1, padx=5, pady=5, sticky="e")
         
         self.progress_bar = ttk.Progressbar(self, orient="horizontal", mode="determinate")
-        self.progress_bar.grid(row=2, column=0, columnspan=3, sticky="ew", padx=5, pady=5)
+        self.progress_bar.grid(row=2, column=0, columnspan=2, sticky="ew", padx=5, pady=5)
 
         self.files = fetch_file_list()
         self.file_combo['values'] = [file[0] for file in self.files]
@@ -123,7 +123,7 @@ class App(tk.Tk):
             messagebox.showerror("Error", _("downloadfailed"))
 
 if __name__ == "__main__":
-    lang = get_user_language_from_env()
+    lang = get_user_language()
     if lang not in ['ja', 'en', 'zh']: 
         lang = 'en' #ja:日本語 en:English zh:Chinese ja_aa:???
     _ = set_language(lang)
